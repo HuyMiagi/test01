@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Jost:wght@500&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Banner -->
+    <section class="banner">
+        <img src="image/The_avengers_logo.png"  alt="avenger logo" class="logo">
+        <div class="banner-text">
+            <h1>Assemble !!</h1>
+            <p>I can do this all day !</p>
+            <div class="banner-btn">
+                <a href="#" id="findout">Find Out</a>
+                <a href="#" id="readmore">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- NavTab -->
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#feature">FEATURE</a></li>
+                <li><a href="#service">OUR SERVICE</a></li>
+                <li><a href="#information">INFO</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+                <li><a href="https://www.youtube.com/watch?v=lBfshkPlMW8">VIDEO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 3 line button -->
+    <div id="menuBtn">
+        <img src="image/3 line icon.png" alt="hamburger" id="menu">
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+        sideNav.style.left = "-220px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.left == "-220px"){
+                sideNav.style.left = "0";
+                menu.src="image/close icon.png";
+            }
+            else{
+                sideNav.style.left = "-220px"
+                menu.src="image/3 line icon.png";
+            }
+        }
+    </script>
+    <div id="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star reded"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star reded"></span>
+        <span class="fa fa-star checked"></span>
+    </div>
+    <!-- Features -->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose US</h1>
+        </div>
+        <div class="feature-box">
+            <div class="feartures">
+                <h1> Experienced staffs - Captain America</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <!-- <i class="fa fa-shield"></i> -->
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Recipient of the Super Soldier serum, World War II hero Steve Rogers fights for American ideals as one of the world's mightiest heroes and the leader of the Avengers.<br>Captain America possesses no superpowers, though the Super-Soldier Serum has enhanced his body's strength, speed, agility, endurance, reflexes, reaction time, and natural self-healing ability to the peak of human physical perfection.</p>
+                    </div>
+                </div>
+                <h1> Costume - weapons </h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-wrench"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>A round shield with a design featuring a white star on a blue circle surrounded by red and white rings.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feartures-img">
+                <img src="image/Captain-America_card-front.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Service -->
+    <section id="service">
+        <div class="title-text">
+            <p>SERVICE</p>
+            <h1> We Provide Best Service</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="image/thor_01.png" alt="thor">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3> Worthy Warrior and Weaponry </h3>
+                    <hr>
+                    <p>Thor, son of Gods, has enhanced longevity, augmented by the Golden Apples of Idunn. He also possesses superhuman strength, speed, agility, durability and immunity to most diseases.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="image/romanov_01.png" alt="thor">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3> Stealthy Super Spy </h3>
+                    <hr>
+                    <p>Black Widow (Natasha Romanova) is a expert marksman and mastery of various weapons, master martial artist and hand-to-hand combatant, skilled hypnotist, expert spy and tactician</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="image/ironman_01.png" alt="thor">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3> Genius Iron man </h3>
+                    <hr>
+                    <p>Iron Man possesses powered armor that gives him superhuman strength and durability, flight, and an array of weapons. In addition to the general-purpose model he wears, Stark has developed several specialized suits for space travel, deep-sea diving, stealth, and other special purposes.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="image/spiderman_01.png" alt="thor">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3> Spiderman (Peter Parker) </h3>
+                    <hr>
+                    <p>Spider-Man gets his superhuman spider-powers and abilities after being bitten by a radioactive spider; these include superhuman strength, speed, agility, jump, reflexes, stamina, durability, coordination, and balance, clinging to surfaces and ceilings like a spider, and detecting danger with his precognition ability called "spider-sense".</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="image/hulk_01.png" alt="thor">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3> Bruce Banner Hulk </h3>
+                    <hr>
+                    <p>As Bruce Banner/Doc Green: Genius level intellect Proficient scientist and engineer As Hulk/Joe Fixit: Superhuman strength, speed, stamina, and durability Anger empowerment Regeneration Shockwave generation Gamma ray emission and manipulation</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="image/hawkeye_01.png" alt="thor">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3> Hawkeye (Clint Barton) </h3>
+                    <hr>
+                    <p>Master archer and marksman Expert martial artist, hand-to-hand combatant, and acrobat Skilled strategist and tactician Utilizes high-tech equipment, armor, compound bow, and various types of specialty arrows</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --Info-- -->
+    <section id="information">
+        <div class="title-text">
+            <p>INFORMATION</p>
+            <h1> What Client Find</h1>
+        </div>
+        <div class="information-row">
+            <div class="information-col">
+                <div class="user">
+                    <img src="image/gamora_01.png" alt="gamora">
+                    <div class="user-info">
+                        <h4><i class="fa fa-heart-o"></i> GAMORA </h4>
+                        <small><i class="fa fa-envelope"></i> Avenger@gamora.com</small>
+                    </div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="information-col">
+                <div class="user">
+                    <img src="image/drax_01.png" alt="drax">
+                    <div class="user-info">
+                        <h4><i class="fa fa-exclamation-triangle"></i> DRAX THE DESTROYER </h4>
+                        <small><i class="fa fa-cloud"></i> Avenger@drax.com</small>
+                    </div>
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+            <div class="information-col">
+                <div class="user">
+                    <img src="image/groot_01.png" alt="groot">
+                    <div class="user-info">
+                        <h4><i class="fa fa-tree"></i> I AM GROOT </h4>
+                        <small><i class="fa fa-twitter"></i> Avenger@groot.com</small>
+                    </div>
+                </div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----Footer---->
+    <section id="footer">
+        <img src="image/deadpool.jpeg" alt="DP" class="footer-img">
+        <div class="title-text">
+            <p>CONTACT</p>
+            <h1> Where To Find Us</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1><i class="fa fa-clock-o"></i> Bussiness Time</h1>
+                <p><i class="fa fa-calendar"></i> Weekday - 9am to 5pm</p>
+                <p><i class="fa fa-calendar"></i> Weekend - 8am to 6pm</p>
+                <p><i class="fa fa-moon-o"></i> I can't do this all night</p>
+            </div>
+            <div class="footer-right">
+                <h1>Contact Us Here <i class="fa fa-map-marker"></i></h1>
+                <p> Somewhere on Earth <i class="fa fa-globe"></i></p>
+                <p> Avenger@gmail.com <i class="fa fa-paper-plane"></i></p>
+                <p>+012-345-6789 <i class="fa fa-volume-control-phone"></i></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
