@@ -388,14 +388,40 @@ hr{
     top: 65%;
     transform: translate(-50%,-50%);
 }
+.social-links{
+    text-align: center;
+}
+.social-links .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 2px solid #497dcc;
+    border-radius: 7px;
+    margin: 40px 5px 0;
+    color: #497dcc;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social-links .fa:hover{
+    background: #497dcc;
+    color: #fff;
+    transform: translateY(-7px);
+}
+.social-links p{
+    font-size: 12px;
+    font-family: 'Jost';
+    margin-top: 20px;
+}
 @media screen and (max-width: 770px){
     .footer-left, .footer-right{
         flex-basis: 100%;
         font-size: 14px;
     }
-    /* .footer-img{
+    .footer-img{
         max-width: 80%;
         left: 30%;
         top: 85%;
-    } */
+    }
 }
